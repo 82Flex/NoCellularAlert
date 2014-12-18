@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FA59DB11A29ED24003BB82D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA59DB01A29ED24003BB82D /* Foundation.framework */; };
+		0FA59DBC1A29ED24003BB82D /* NoCellularAlert.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0FA59DBB1A29ED24003BB82D /* NoCellularAlert.mm */; };
+		0FA59DC71A29ED3C003BB82D /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA59DC61A29ED3C003BB82D /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FA59DAD1A29ED24003BB82D /* NoCellularAlert.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = NoCellularAlert.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FA59DB01A29ED24003BB82D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0FA59DB61A29ED24003BB82D /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		0FA59DB81A29ED24003BB82D /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		0FA59DB91A29ED24003BB82D /* NoCellularAlert-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NoCellularAlert-Prefix.pch"; sourceTree = "<group>"; };
+		0FA59DBA1A29ED24003BB82D /* NoCellularAlert.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NoCellularAlert.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0FA59DBB1A29ED24003BB82D /* NoCellularAlert.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NoCellularAlert.mm; sourceTree = "<group>"; };
+		0FA59DC01A29ED24003BB82D /* NoCellularAlert.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = NoCellularAlert.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/NoCellularAlert.plist; sourceTree = "<group>"; };
+		0FA59DC61A29ED3C003BB82D /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/theos/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FA59DA91A29ED24003BB82D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FA59DC71A29ED3C003BB82D /* libsubstrate.dylib in Frameworks */,
+				0FA59DB11A29ED24003BB82D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FA59DA21A29ED24003BB82D = {
+			isa = PBXGroup;
+			children = (
+				0FA59DB21A29ED24003BB82D /* NoCellularAlert */,
+				0FA59DAF1A29ED24003BB82D /* Frameworks */,
+				0FA59DAE1A29ED24003BB82D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FA59DAE1A29ED24003BB82D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FA59DAD1A29ED24003BB82D /* NoCellularAlert.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FA59DAF1A29ED24003BB82D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FA59DC61A29ED3C003BB82D /* libsubstrate.dylib */,
+				0FA59DB01A29ED24003BB82D /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0FA59DB21A29ED24003BB82D /* NoCellularAlert */ = {
+			isa = PBXGroup;
+			children = (
+				0FA59DBA1A29ED24003BB82D /* NoCellularAlert.xm */,
+				0FA59DBB1A29ED24003BB82D /* NoCellularAlert.mm */,
+				0FA59DB31A29ED24003BB82D /* Package */,
+				0FA59DB71A29ED24003BB82D /* Supporting Files */,
+			);
+			path = NoCellularAlert;
+			sourceTree = "<group>";
+		};
+		0FA59DB31A29ED24003BB82D /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				0FA59DB41A29ED24003BB82D /* DEBIAN */,
+				0FA59DBD1A29ED24003BB82D /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		0FA59DB41A29ED24003BB82D /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				0FA59DB61A29ED24003BB82D /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		0FA59DB71A29ED24003BB82D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FA59DB81A29ED24003BB82D /* PackageVersion.plist */,
+				0FA59DB91A29ED24003BB82D /* NoCellularAlert-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FA59DBD1A29ED24003BB82D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0FA59DBE1A29ED24003BB82D /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		0FA59DBE1A29ED24003BB82D /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				0FA59DBF1A29ED24003BB82D /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		0FA59DBF1A29ED24003BB82D /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				0FA59DC01A29ED24003BB82D /* NoCellularAlert.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0FA59DAA1A29ED24003BB82D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0FA59DAC1A29ED24003BB82D /* NoCellularAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FA59DC31A29ED24003BB82D /* Build configuration list for PBXNativeTarget "NoCellularAlert" */;
+			buildPhases = (
+				0FA59DA71A29ED24003BB82D /* ShellScript */,
+				0FA59DA81A29ED24003BB82D /* Sources */,
+				0FA59DA91A29ED24003BB82D /* Frameworks */,
+				0FA59DAA1A29ED24003BB82D /* Headers */,
+				0FA59DAB1A29ED24003BB82D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoCellularAlert;
+			productName = NoCellularAlert;
+			productReference = 0FA59DAD1A29ED24003BB82D /* NoCellularAlert.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FA59DA31A29ED24003BB82D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					0FA59DAC1A29ED24003BB82D = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 0FA59DA61A29ED24003BB82D /* Build configuration list for PBXProject "NoCellularAlert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0FA59DA21A29ED24003BB82D;
+			productRefGroup = 0FA59DAE1A29ED24003BB82D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FA59DAC1A29ED24003BB82D /* NoCellularAlert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FA59DA71A29ED24003BB82D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		0FA59DAB1A29ED24003BB82D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FA59DA81A29ED24003BB82D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FA59DBC1A29ED24003BB82D /* NoCellularAlert.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0FA59DC11A29ED24003BB82D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		0FA59DC21A29ED24003BB82D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		0FA59DC41A29ED24003BB82D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoCellularAlert/NoCellularAlert-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		0FA59DC51A29ED24003BB82D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoCellularAlert/NoCellularAlert-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FA59DA61A29ED24003BB82D /* Build configuration list for PBXProject "NoCellularAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FA59DC11A29ED24003BB82D /* Debug */,
+				0FA59DC21A29ED24003BB82D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FA59DC31A29ED24003BB82D /* Build configuration list for PBXNativeTarget "NoCellularAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FA59DC41A29ED24003BB82D /* Debug */,
+				0FA59DC51A29ED24003BB82D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FA59DA31A29ED24003BB82D /* Project object */;
+}

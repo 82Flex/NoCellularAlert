@@ -1,0 +1,10 @@
+Package: com.darwindev.NoCellularAlert
+Name: NoCellularAlert
+Version: 1.0-1
+Description: 隐藏“已为该应用程序关闭蜂窝数据”的提示信息
+Section: Tweaks
+Depends: firmware (>= 7.0), mobilesubstrate
+Architecture: iphoneos-arm
+Author: i_82 <i.82@me.com>
+
+
